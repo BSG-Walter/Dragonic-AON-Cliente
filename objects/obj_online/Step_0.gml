@@ -1,5 +1,7 @@
 
 if (global.online_exportando) exit;
+if (actualizacion_estado == 0 && current_time - actualizacion_iniciada >= ONLINE_TIMEOUT_MS)
+    actualizacion_estado = 3;
 if (status_text != status_last_text) {
     status_last_text = status_text;
     status_expire_at = current_time + ONLINE_STATUS_DURATION_MS;

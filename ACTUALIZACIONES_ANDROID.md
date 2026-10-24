@@ -26,7 +26,18 @@ una actualización de forma silenciosa.
    GitHub y permitirá abrir el nuevo APK. Una instalación reciente no
    mostrará el aviso.
 
-Si no hay Internet, GitHub devuelve un error o aún no existe ningún
-Release estable, se omite el aviso y el juego puede iniciarse normalmente.
+El modo offline siempre se puede iniciar. Para entrar al modo online Android
+debe completar la comprobación de versión: si GitHub no responde o hay una
+versión más reciente, no permite iniciar sesión hasta verificar de nuevo al
+abrir el juego, o instalar el APK nuevo. Si aún no existe ningún Release
+estable (HTTP 404), se permite jugar con la versión actual del APK.
+
+El servidor Go de producción también valida la versión anunciada por el
+cliente en el login, utilizando la misma API de GitHub (con caché de dos
+minutos). En `server-go/server-config.json` se activa mediante
+`require_latest_client_version: true`. En el servidor de desarrollo local
+queda desactivado para las pruebas. Un Release nuevo puede tardar hasta dos
+minutos en ser exigido por un servidor que ya estaba encendido.
+
 Los tags deben tener componentes numéricos separados por puntos, como
 `v1.0.3` o `v1.0.10`; se comparan por componente y no alfabéticamente.

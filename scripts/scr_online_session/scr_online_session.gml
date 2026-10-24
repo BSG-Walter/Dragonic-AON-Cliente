@@ -9,7 +9,7 @@ function online_wire_opcodes() {
         "spell_order", "resync", "tame", "smelt", "work_selection", "next_arena_bot", "turn",
         "safe", "save", "resurrect", "home", "meditate", "stop_work", "arena_bot",
         "buy", "sell", "deposit", "withdraw", "skill_open", "skill", "craft", "faction",
-        "dragonic", "characters", "create_character"
+        "dragonic", "characters", "create_character", "delete_character"
     ];
     return _names;
 }
@@ -360,6 +360,8 @@ function online_desconectar(_reason) {
         characters_ready = false;
         enter_pending = false;
         create_pending = false;
+        delete_pending = false;
+        delete_name = "";
         status_text = _reason;
         save_sequence = 0;
         form_values[3] = "";
@@ -406,6 +408,15 @@ function online_host_lan(_host) {
 }
 
 function online_conectar(_register) {
+    if (obj_online.actualizacion_estado != 1) {
+        if (obj_online.actualizacion_estado == 0)
+            obj_online.status_text = "Comprobando la última versión. Intentá nuevamente...";
+        else if (obj_online.actualizacion_estado == 2)
+            obj_online.status_text = "Actualizá el cliente a " + obj_online.actualizacion_version + " para entrar online";
+        else
+            obj_online.status_text = "No se pudo comprobar la versión. Verificá Internet y reiniciá el juego";
+        return;
+    }
     with (obj_online) {
         login_phase_started_at = current_time;
         enter_started_at = 0;

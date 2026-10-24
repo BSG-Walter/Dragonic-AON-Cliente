@@ -14,7 +14,7 @@ function online_recibir(_message) {
                 login_phase_started_at = current_time;
                 show_debug_message("ONLINE_LOGIN_PHASE hello");
                 if (_message.protocol != ONLINE_PROTOCOL) { online_desconectar("Versión de servidor incompatible"); return; }
-                online_enviar({op: "login", protocol: ONLINE_PROTOCOL, account: form_values[2], password: form_values[3], register: register_account, actor_batches: variable_struct_exists(_message, "actor_batches") && _message.actor_batches});
+                online_enviar({op: "login", protocol: ONLINE_PROTOCOL, account: form_values[2], password: form_values[3], client_version: GM_version, register: register_account, actor_batches: variable_struct_exists(_message, "actor_batches") && _message.actor_batches});
                 form_values[3] = "";
                 break;
             case "authenticated":
@@ -55,6 +55,12 @@ function online_recibir(_message) {
                         character_selected = array_length(characters) - 1;
                 }
                 characters_ready = true;
+                var _nombre_borrado = delete_pending ? delete_name : "";
+                if (delete_pending) {
+                    delete_pending = false;
+                    delete_name = "";
+                    if (instance_exists(obj_seleccionarPJ_borrar)) obj_seleccionarPJ_borrar.confirmado = false;
+                }
                 show_debug_message("ONLINE_LOGIN_PHASE characters_ready count=" + string(array_length(characters)));
                 if (create_pending) {
                     create_pending = false;
@@ -64,7 +70,9 @@ function online_recibir(_message) {
                 }
                 if (instance_exists(obj_control_seleccionarPJ))
                     obj_control_seleccionarPJ.elegido = character_selected + 1;
-                status_text = "Seleccioná un personaje o creá uno nuevo";
+                status_text = _nombre_borrado != ""
+                    ? "Personaje " + _nombre_borrado + " eliminado"
+                    : "Seleccioná un personaje o creá uno nuevo";
                 break;
             case "entered":
                 show_debug_message("ONLINE_LOGIN_PHASE entered");
@@ -118,6 +126,10 @@ function online_recibir(_message) {
                 online_guardado_responder(_message);
                 online_comercio_responder(_message);
                 if (playing && pending_spell_sequence > 0) online_solicitar_resync();
+                if (delete_pending) {
+                    delete_pending = false;
+                    delete_name = "";
+                }
                 if (!playing && (enter_pending || create_pending || global.online_elegir)) {
                     enter_pending = false;
                     create_pending = false;

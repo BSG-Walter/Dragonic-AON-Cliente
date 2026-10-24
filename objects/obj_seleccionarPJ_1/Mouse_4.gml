@@ -4,7 +4,7 @@ obj_seleccionarPJ_borrar.confirmado = false;
 
 if (global.online_elegir) {
     if (!instance_exists(obj_online) || !obj_online.characters_ready || obj_online.playing
-        || obj_online.enter_pending || obj_online.create_pending) exit;
+        || obj_online.enter_pending || obj_online.create_pending || obj_online.delete_pending) exit;
     if (numPj <= array_length(obj_online.characters)) {
         obj_online.character_selected = numPj - 1;
         obj_control_seleccionarPJ.elegido = numPj;

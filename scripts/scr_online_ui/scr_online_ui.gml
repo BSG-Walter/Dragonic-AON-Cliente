@@ -70,7 +70,7 @@ function online_creacion_volver() {
 }
 
 function online_selector_entrar(_index) {
-    if (!obj_online.characters_ready || obj_online.playing || obj_online.enter_pending || obj_online.create_pending
+    if (!obj_online.characters_ready || obj_online.playing || obj_online.enter_pending || obj_online.create_pending || obj_online.delete_pending
         || _index < 0 || _index >= array_length(obj_online.characters)) return false;
     var _slot = obj_online.characters[_index];
     if (!is_struct(_slot) || !is_string(_slot.nombre) || _slot.nombre == "") return false;

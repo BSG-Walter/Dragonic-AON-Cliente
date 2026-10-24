@@ -49,6 +49,8 @@ characters_ready = false;
 character_selected = -1;
 character_create_name = "";
 create_pending = false;
+delete_pending = false;
+delete_name = "";
 enter_pending = false;
 test_enter_sent = false;
 for (var _i = 1; _i <= parameter_count(); _i++) {
@@ -118,7 +120,9 @@ actualizacion_request = -1;
 actualizacion_version = "";
 actualizacion_url = "";
 actualizacion_es_apk = false;
-if (os_type == os_android && test_role == "") {
+actualizacion_estado = (os_type == os_android && test_role == "") ? 0 : 1;
+actualizacion_iniciada = current_time;
+if (actualizacion_estado == 0) {
     var _headers = ds_map_create();
     ds_map_add(_headers, "User-Agent", "Dragonic-AON-Cliente");
     ds_map_add(_headers, "Accept", "application/vnd.github+json");

@@ -1,7 +1,19 @@
 /// @description  Borra
 
 if (global.online_elegir) {
-    obj_online.status_text = "El borrado de personajes online no está disponible";
+    if (!instance_exists(obj_online) || !obj_seleccionarPJ_borrar.confirmado
+        || obj_online.delete_pending || obj_online.playing
+        || !obj_online.characters_ready) exit;
+    var _index = obj_online.character_selected;
+    if (_index < 0 || _index >= array_length(obj_online.characters)) exit;
+    var _nombre = obj_online.characters[_index].nombre;
+    if (online_enviar({op: "delete_character", name: _nombre})) {
+        obj_online.delete_pending = true;
+        obj_online.delete_name = _nombre;
+        obj_online.status_text = "Borrando " + _nombre + "...";
+        obj_seleccionarPJ_borrar.confirmado = false;
+        obj_seleccionarPJ_borrar.alarm[0] = -1;
+    }
     exit;
 }
 if (obj_control_seleccionarPJ.elegido != -1) {
