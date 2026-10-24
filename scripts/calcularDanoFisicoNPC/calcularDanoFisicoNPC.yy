@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"calcularDanoFisicoNPC",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"calcularDanoFisicoNPC",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

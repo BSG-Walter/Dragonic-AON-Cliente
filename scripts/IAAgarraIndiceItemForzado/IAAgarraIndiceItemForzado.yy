@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"IAAgarraIndiceItemForzado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"IAAgarraIndiceItemForzado",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"actualizarItemsXRM",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"actualizarItemsXRM",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

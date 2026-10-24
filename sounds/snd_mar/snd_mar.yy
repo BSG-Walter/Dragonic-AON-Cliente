@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_mar",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":1,
+  "compressionQuality":6,
+  "conversionMode":0,
+  "duration":4.639875,
+  "exportDir":"",
+  "name":"snd_mar",
+  "parent":{
+    "name":"Sonidos",
+    "path":"folders/Sounds/Sonidos.yy",
+  },
+  "preload":true,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_mar",
+  "volume":1.0,
+}

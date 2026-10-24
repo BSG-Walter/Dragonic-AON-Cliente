@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"esPolo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"esPolo",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

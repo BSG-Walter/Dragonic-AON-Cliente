@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"alinearObjeto",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"alinearObjeto",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

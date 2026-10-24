@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"refrescarCabezas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"refrescarCabezas",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

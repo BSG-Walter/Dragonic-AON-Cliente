@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"obtenerAtributoAgilidadPJ",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"obtenerAtributoAgilidadPJ",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

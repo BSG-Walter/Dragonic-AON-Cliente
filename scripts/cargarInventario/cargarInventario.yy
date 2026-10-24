@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cargarInventario",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cargarInventario",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

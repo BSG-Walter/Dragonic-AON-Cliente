@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"descontarElementosArmaduraDragonic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"descontarElementosArmaduraDragonic",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

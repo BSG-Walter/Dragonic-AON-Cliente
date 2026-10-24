@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cargarPJs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cargarPJs",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

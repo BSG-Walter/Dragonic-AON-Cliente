@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"claseSemiGuerrera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"claseSemiGuerrera",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

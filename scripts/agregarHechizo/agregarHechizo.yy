@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"agregarHechizo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"agregarHechizo",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

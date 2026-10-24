@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"actualizarNPCsXRM",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"actualizarNPCsXRM",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

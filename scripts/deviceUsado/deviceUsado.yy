@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"deviceUsado",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deviceUsado",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

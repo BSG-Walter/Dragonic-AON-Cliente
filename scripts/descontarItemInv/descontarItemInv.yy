@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"descontarItemInv",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"descontarItemInv",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

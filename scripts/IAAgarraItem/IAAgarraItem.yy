@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"IAAgarraItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"IAAgarraItem",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

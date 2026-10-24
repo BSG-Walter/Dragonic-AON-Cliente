@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"touchscreenScripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"touchscreenScripts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"bck_agua_2_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"bck_agua_2_tileset",
+  "out_columns":1,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"bck_agua_2",
+    "path":"sprites/bck_agua_2/bck_agua_2.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"sinusar",
+    "path":"texturegroups/sinusar",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":256,
+  "tilehsep":8,
+  "tilevsep":8,
+  "tileWidth":256,
+  "tilexoff":4,
+  "tileyoff":4,
+  "tile_count":1,
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"dibujarPJ",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dibujarPJ",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

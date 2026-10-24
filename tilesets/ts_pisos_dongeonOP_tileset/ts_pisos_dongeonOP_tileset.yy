@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_pisos_dongeonOP_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_pisos_dongeonOP_tileset",
+  "out_columns":4,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"ts_pisos_dongeonOP",
+    "path":"sprites/ts_pisos_dongeonOP/ts_pisos_dongeonOP.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"dungeons",
+    "path":"texturegroups/dungeons",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":128,
+  "tilehsep":8,
+  "tilevsep":8,
+  "tileWidth":128,
+  "tilexoff":4,
+  "tileyoff":4,
+  "tile_count":20,
+}

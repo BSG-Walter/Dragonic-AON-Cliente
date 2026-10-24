@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"elegirIAObjetivoIA",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"elegirIAObjetivoIA",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

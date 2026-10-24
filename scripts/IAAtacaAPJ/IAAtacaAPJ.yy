@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"IAAtacaAPJ",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"IAAtacaAPJ",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"bck_puente_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"bck_puente_tileset",
+  "out_columns":4,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"bck_puente",
+    "path":"sprites/bck_puente/bck_puente.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"sinusar",
+    "path":"texturegroups/sinusar",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":64,
+  "tilehsep":8,
+  "tilevsep":8,
+  "tileWidth":64,
+  "tilexoff":4,
+  "tileyoff":4,
+  "tile_count":15,
+}

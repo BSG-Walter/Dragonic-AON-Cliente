@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"enlistarseEnFaccion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enlistarseEnFaccion",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

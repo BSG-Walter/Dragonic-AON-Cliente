@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"elegirArmaduraDragonic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"elegirArmaduraDragonic",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

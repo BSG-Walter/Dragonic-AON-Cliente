@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"dibujarIA",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dibujarIA",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"tirarItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tirarItem",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"guardarBanco",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"guardarBanco",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

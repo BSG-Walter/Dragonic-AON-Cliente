@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"viewsScripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"viewsScripts",
+  "parent":{
+    "name":"Dibujado",
+    "path":"folders/Scripts/Dibujado.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

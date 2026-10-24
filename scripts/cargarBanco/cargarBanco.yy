@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cargarBanco",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cargarBanco",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

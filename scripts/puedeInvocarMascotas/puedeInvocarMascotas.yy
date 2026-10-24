@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"puedeInvocarMascotas",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"puedeInvocarMascotas",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

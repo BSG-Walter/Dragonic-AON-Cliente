@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_costa_polo_tileset",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"ts_costa_polo_tileset",
+  "out_columns":3,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"ts_costa_polo",
+    "path":"sprites/ts_costa_polo/ts_costa_polo.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"sinusar",
+    "path":"texturegroups/sinusar",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":64,
+  "tilehsep":8,
+  "tilevsep":8,
+  "tileWidth":64,
+  "tilexoff":4,
+  "tileyoff":4,
+  "tile_count":12,
+}
