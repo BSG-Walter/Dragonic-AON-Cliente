@@ -319,7 +319,8 @@ function online_efecto(_message) {
         case "speech": break;
         case "death": _sound = snd_muerte; break;
         case "miss":
-            _sound = snd_fallo;
+            if (_source.object_index == obj_pj || (_source.object_index == obj_online_actor && _source.data.kind != "npc"))
+                _sound = snd_fallo;
             var _info = instance_create_depth(_source.x, _source.y, 0, obj_INFO);
             _info.padre = _source;
             _info.texto = _source.object_index == obj_pj ? "¡Fallás!" : "¡Falla!";

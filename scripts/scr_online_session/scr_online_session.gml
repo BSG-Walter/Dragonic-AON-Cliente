@@ -409,6 +409,22 @@ function online_host_lan(_host) {
 }
 
 function online_conectar(_register) {
+    if (ONLINE_DISCOVERY_URL != "" && obj_online.test_role == ""
+        && obj_online.form_values[0] == obj_online.discovery_host) {
+        if (obj_online.discovery_request >= 0) {
+            obj_online.status_text = "Buscando servidor online...";
+            return;
+        }
+        obj_online.discovery_register = _register;
+        obj_online.discovery_request = http_get(ONLINE_DISCOVERY_URL + "/server");
+        obj_online.status_text = obj_online.discovery_request >= 0
+            ? "Buscando servidor online..." : "No se pudo consultar el servidor público";
+        return;
+    }
+    online_conectar_directo(_register);
+}
+
+function online_conectar_directo(_register) {
     if (obj_online.actualizacion_estado != 1) {
         if (obj_online.actualizacion_estado == 0)
             obj_online.status_text = "Comprobando la última versión. Intentá nuevamente...";

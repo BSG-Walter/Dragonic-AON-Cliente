@@ -1,4 +1,33 @@
-if (async_load[? "id"] != actualizacion_request) exit;
+var _id = async_load[? "id"];
+if (_id == discovery_request && discovery_request >= 0) {
+    discovery_request = -1;
+    if (async_load[? "status"] != 0 || async_load[? "http_status"] != 200) {
+        status_text = "Servidor online no disponible. Probá nuevamente";
+        exit;
+    }
+    try {
+        var _server = json_parse(async_load[? "result"]);
+        if (!is_struct(_server) || !variable_struct_exists(_server, "url") || !is_string(_server.url))
+            throw ("Respuesta de servidor inválida");
+        var _url = _server.url;
+        var _suffix = ".trycloudflare.com";
+        if (string_length(_url) > ONLINE_DISCOVERY_URL_MAX_LENGTH
+            || string_length(_url) <= string_length("wss://") + string_length(_suffix)
+            || string_pos("wss://", _url) != 1
+            || string_copy(_url, string_length(_url) - string_length(_suffix) + 1, string_length(_suffix)) != _suffix)
+            throw ("Dirección pública inválida");
+        if (form_values[0] != discovery_host) exit;
+        discovery_host = _url;
+        form_values[0] = _url;
+        form_values[1] = "443";
+        online_conectar_directo(discovery_register);
+    } catch (_error) {
+        status_text = "No se pudo obtener la dirección del servidor";
+        show_debug_message("ONLINE_DISCOVERY_ERROR " + string(_error));
+    }
+    exit;
+}
+if (_id != actualizacion_request) exit;
 actualizacion_request = -1;
 var _http_status = async_load[? "http_status"];
 if (_http_status == 404) {

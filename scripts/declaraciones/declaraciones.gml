@@ -83,11 +83,13 @@ gml_pragma("global", "init_engine_settings();");
 
 
 
-#macro CLIENT_VERSION "1.0.4"
+#macro CLIENT_VERSION "1.0.5"
 #macro ONLINE_PROTOCOL 4
 #macro ONLINE_EXPORT_FORMAT 1
 #macro ONLINE_PORT 8766
 #macro ONLINE_LOCAL_HOST "ws://127.0.0.1"
+#macro ONLINE_DISCOVERY_URL "https://dragonic-aon.waltersit0159753.workers.dev"
+#macro ONLINE_DISCOVERY_URL_MAX_LENGTH 255
 #macro ONLINE_LOCAL_PORT 8768
 #macro ONLINE_PREVIOUS_PORT 8765
 #macro ONLINE_TIMEOUT_MS 15000
