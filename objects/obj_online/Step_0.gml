@@ -38,6 +38,12 @@ if (test_role != "") online_prueba_step();
 if (instance_exists(obj_pausa)) exit;
 var _gx = device_mouse_x_to_gui(0), _gy = device_mouse_y_to_gui(0);
 var _pressed = device_mouse_check_button_pressed(0, mb_left);
+if (room == rm_menuPrincipal && actualizacion_url != "" && _pressed
+    && _gx >= ACTUALIZACIONES_UI_LEFT && _gx <= ACTUALIZACIONES_UI_RIGHT
+    && _gy >= ACTUALIZACIONES_UI_TOP && _gy < ACTUALIZACIONES_UI_BOTTOM) {
+    url_open(actualizacion_url);
+    exit;
+}
 if (room == rm_menuPrincipal && !form_open) {
     if (_pressed && _gx > ONLINE_UI_RIGHT && _gy < ONLINE_UI_TOP) {
         if (authenticated) { online_desconectar("Sesión cerrada"); }

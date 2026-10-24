@@ -113,3 +113,15 @@ test_dopa_seen = false;
 
 last_tame_target = "";
 last_tame_click = 0;
+
+actualizacion_request = -1;
+actualizacion_version = "";
+actualizacion_url = "";
+actualizacion_es_apk = false;
+if (os_type == os_android && test_role == "") {
+    var _headers = ds_map_create();
+    ds_map_add(_headers, "User-Agent", "Dragonic-AON-Cliente");
+    ds_map_add(_headers, "Accept", "application/vnd.github+json");
+    actualizacion_request = http_request(ACTUALIZACIONES_API, "GET", _headers, "");
+    ds_map_destroy(_headers);
+}

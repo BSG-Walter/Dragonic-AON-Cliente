@@ -140,6 +140,12 @@ gml_pragma("global", "init_engine_settings();");
 #macro ONLINE_UI_MENU_COUNT_WIDTH 60
 #macro ONLINE_UI_QUANTITY_DIGITS 5
 #macro ONLINE_UI_FORM_HEIGHT 274
+#macro ACTUALIZACIONES_API "https://api.github.com/repos/BSG-Walter/Dragonic-AON-Cliente/releases/latest"
+#macro ACTUALIZACIONES_WEB "https://github.com/BSG-Walter/Dragonic-AON-Cliente/releases/latest"
+#macro ACTUALIZACIONES_UI_LEFT ONLINE_UI_LEFT
+#macro ACTUALIZACIONES_UI_RIGHT (ONLINE_UI_RIGHT - ONLINE_UI_BUTTON_HEIGHT)
+#macro ACTUALIZACIONES_UI_TOP 0
+#macro ACTUALIZACIONES_UI_BOTTOM ONLINE_UI_TOP
 #macro ONLINE_TEST_POSITION_TOLERANCE 0.001
 #macro ONLINE_TEST_MS 16000
 #macro ONLINE_TEST_ACTION_MS 1200
