@@ -8,6 +8,7 @@ function online_recibir(_message) {
             status_expire_at = current_time + ONLINE_STATUS_DURATION_MS;
         switch (_message.op) {
             case "pong":
+                if (variable_struct_exists(_message, "online_count")) online_count = _message.online_count;
                 show_debug_message("ONLINE_PONG_RECEIVED ms_since_ping=" + string(current_time - last_ping));
                 break;
             case "hello":
@@ -75,6 +76,7 @@ function online_recibir(_message) {
                     : "Seleccioná un personaje o creá uno nuevo";
                 break;
             case "entered":
+                if (variable_struct_exists(_message, "online_count")) online_count = _message.online_count;
                 show_debug_message("ONLINE_LOGIN_PHASE entered");
                 enter_started_at = 0;
                 playing = true;

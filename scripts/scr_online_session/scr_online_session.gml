@@ -354,6 +354,7 @@ function online_desconectar(_reason) {
         connected = false;
         authenticated = false;
         playing = false;
+        online_count = 0;
         server_paused = false;
         cleanup_seconds = -1;
         cleanup_received_at = 0;

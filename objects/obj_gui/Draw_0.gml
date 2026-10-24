@@ -466,21 +466,39 @@ draw_set_color(c_white);
 draw_text(global.inventario_x + 30, global.inventario_y + 57, string(obj_pj.oro));
 
 // Nombre de mapa y coordenadas
-
 draw_set_font(fnt_Vedrana_6_bold);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
+var _centroHUD = global.render_x + render_width * 0.5;
+var _abajoHUD = global.render_y + render_height;
+var _ubicacion = nombreMapa + " - " + string(floor((obj_pj.x - 608) / 32) + 9) + " - " + string(floor((obj_pj.y - 400) / 32) + 7);
+var _onlineText = "";
+var _onlineX = 0;
+if (global.online_modo && instance_exists(obj_online) && obj_online.playing) {
+    _onlineText = "Online: " + string(obj_online.online_count);
+    _onlineX = _centroHUD - string_width(_ubicacion) * 0.5 - HALF_TILE;
+}
 
 draw_set_color(c_black);
-draw_text(global.render_x+ render_width * 0.5, global.render_y + render_height - 2, nombreMapa + " - " + string(floor((obj_pj.x - 608) / 32) + 9) + " - " + string(floor((obj_pj.y - 400) / 32) + 7));
+draw_text(_centroHUD, _abajoHUD - 2, _ubicacion);
+if (_onlineText != "") {
+    draw_set_halign(fa_right);
+    draw_text(_onlineX, _abajoHUD - 2, _onlineText);
+    draw_set_halign(fa_center);
+}
 
 if (obj_mapas_mundo.mapas[room]) {
     draw_set_color(c_green);
 } else {
     draw_set_color(c_silver);
 }
-
-draw_text(global.render_x+ render_width * 0.5 - 1, global.render_y + render_height - 3, nombreMapa + " - " + string(floor((obj_pj.x - 608) / 32) + 9) + " - " + string(floor((obj_pj.y - 400) / 32) + 7));
+draw_text(_centroHUD - 1, _abajoHUD - 3, _ubicacion);
+if (_onlineText != "") {
+    draw_set_color(c_silver);
+    draw_set_halign(fa_right);
+    draw_text(_onlineX - 1, _abajoHUD - 3, _onlineText);
+    draw_set_halign(fa_center);
+}
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
