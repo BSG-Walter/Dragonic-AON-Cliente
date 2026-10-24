@@ -15,7 +15,7 @@ function online_recibir(_message) {
                 login_phase_started_at = current_time;
                 show_debug_message("ONLINE_LOGIN_PHASE hello");
                 if (_message.protocol != ONLINE_PROTOCOL) { online_desconectar("Versión de servidor incompatible"); return; }
-                online_enviar({op: "login", protocol: ONLINE_PROTOCOL, account: form_values[2], password: form_values[3], client_version: GM_version, register: register_account, actor_batches: variable_struct_exists(_message, "actor_batches") && _message.actor_batches});
+                online_enviar({op: "login", protocol: ONLINE_PROTOCOL, account: form_values[2], password: form_values[3], client_version: CLIENT_VERSION, register: register_account, actor_batches: variable_struct_exists(_message, "actor_batches") && _message.actor_batches});
                 form_values[3] = "";
                 break;
             case "authenticated":

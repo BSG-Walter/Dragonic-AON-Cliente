@@ -83,6 +83,7 @@ gml_pragma("global", "init_engine_settings();");
 
 
 
+#macro CLIENT_VERSION "1.0.4"
 #macro ONLINE_PROTOCOL 4
 #macro ONLINE_EXPORT_FORMAT 1
 #macro ONLINE_PORT 8766

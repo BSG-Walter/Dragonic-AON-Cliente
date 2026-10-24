@@ -18,7 +18,7 @@ try {
         exit;
     }
     actualizacion_estado = 1;
-    if (!actualizacion_version_mayor(_release.tag_name, GM_version)) exit;
+    if (!actualizacion_version_mayor(_release.tag_name, CLIENT_VERSION)) exit;
 
     var _apk = "";
     if (variable_struct_exists(_release, "assets") && is_array(_release.assets)) {
