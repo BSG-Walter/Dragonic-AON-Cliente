@@ -88,3 +88,4 @@ server-go/local.sqlite3-wal
 /server-go
 /tools
 /tests
+/docs
