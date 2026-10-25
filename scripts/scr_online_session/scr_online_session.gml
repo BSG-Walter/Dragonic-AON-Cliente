@@ -354,6 +354,8 @@ function online_desconectar(_reason) {
         connected = false;
         authenticated = false;
         playing = false;
+        last_ping = 0;
+        ping_ms = -1;
         online_count = 0;
         server_paused = false;
         cleanup_seconds = -1;
@@ -443,6 +445,8 @@ function online_conectar_directo(_register) {
         connected = false;
         authenticated = false;
         playing = false;
+        last_ping = 0;
+        ping_ms = -1;
         characters_ready = false;
         enter_pending = false;
         create_pending = false;

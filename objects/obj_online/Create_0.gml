@@ -12,6 +12,7 @@ enter_started_at = 0;
 create_started_at = 0;
 last_move = 0;
 last_ping = 0;
+ping_ms = -1;
 sequence = 0;
 last_ack = 0;
 save_state = 0;

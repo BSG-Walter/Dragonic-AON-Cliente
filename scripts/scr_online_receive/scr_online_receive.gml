@@ -9,7 +9,8 @@ function online_recibir(_message) {
         switch (_message.op) {
             case "pong":
                 if (variable_struct_exists(_message, "online_count")) online_count = _message.online_count;
-                show_debug_message("ONLINE_PONG_RECEIVED ms_since_ping=" + string(current_time - last_ping));
+                if (last_ping > 0) ping_ms = max(0, current_time - last_ping);
+                show_debug_message("ONLINE_PONG_RECEIVED ms_since_ping=" + string(ping_ms));
                 break;
             case "hello":
                 login_phase_started_at = current_time;
