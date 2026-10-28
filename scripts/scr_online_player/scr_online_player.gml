@@ -13,6 +13,7 @@ function online_jugador_step() {
         for (var _device = 0; _device < MAX_MULTITOUCH; _device++) {
             if (device_mouse_check_button_pressed(_device, mb_left)) {
                 var _mx = device_mouse_x(_device), _my = device_mouse_y(_device);
+                if (position_meeting(_mx, _my, obj_area_flechas)) continue;
                 if (!atacaConArco && !atacaConHechizo
                     && _mx >= global.render_x && _mx <= global.render_x + 56
                     && _my >= global.render_y && _my <= global.render_y + TILE_SIZE) {
@@ -53,7 +54,10 @@ function online_atacar(_mode, _x, _y) {
             obj_pj.atacaConHechizo = false;
             obj_online.attack_ready_at = current_time + obj_pj.intervaloHechizo * ONLINE_MS_PER_SECOND / SECOND;
         }
-    } else if (_mode == "bow" || _target != "") online_accion({op: "attack", target: _target, mode: _mode});
+    } else if (_mode == "bow" || _target != "") {
+        if (online_accion({op: "attack", target: _target, mode: _mode}) && _mode == "bow")
+            obj_pj.atacaConArco = false;
+    }
 }
 
 function online_melee() {
